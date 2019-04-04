@@ -1,7 +1,4 @@
-*.ss~
-*.ss#*
-.#*.ss
-
-*.scm~
-*.scm#*
-.#*.scm
+.DS_Store
+node_modules
+npm-debug.log
+.env
