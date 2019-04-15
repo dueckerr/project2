@@ -1,3 +1,17 @@
-.list-group-item {
-  line-height: 2.5;
+button {
+  float: right;
+}
+
+.card-header button.delete,
+button.edit {
+  float: right;
+  margin: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.top-30 {
+  margin-top: 30px;
 }

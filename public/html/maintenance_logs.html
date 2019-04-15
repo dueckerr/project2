@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CMS - Express</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title"> -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="maintenance_logs.html">Maintenance Logs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pumpMaint.html">Pump Maintenance</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="stock.html">Fleet Inventory</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="public/maintenance_logs.html">Add Maintenance</a>
+            <a class="dropdown-item" href="public/stock.html">Add Fleet</a>
+            <a class="dropdown-item" href="pumpMaint.html">Add Inventory</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <h2>Bordered Table</h2>
+    <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>            
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Date</th>
+          <th>Fleet</th>        
+          <th>Unit #</th>
+          <th>Pump Strokes</th>
+          <th>Top</th>
+          <th>Bottom</th>
+          <th>Parts - Used</th>        
+          <th>Remaining</th>
+          <th>Cause</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>01/01/1000</td>
+          <td>Fleet 1</td>
+          <td>50</td>
+          <td>1,000</td>
+          <td>Valves - 3 <br> Seats - 3 </td>
+          <td>Valves - 3 <br> Seats - 3 </td>
+          <td>Valves - 6 <br> Seats - 6 </td>
+          <td>Valves - 10 <br> Seats - 10 </td>
+          <td>1</td>
+          <td>X</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+    <!-- Custom Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
+    <script src="js/maintenance_logs.js" type="text/javascript"></script>
+  
+  </body>
+  
+  </html>
+  

@@ -1,0 +1,31 @@
+
+<div class="container">
+  <div class="row">
+  <h5 class="card-title">Parts Inventory</h5>
+<hr>
+
+
+
+  <div class="table-responsive table-hover">
+  <table class="table" id="parts">
+    <thead>
+      <tr>
+        <th>Part ID</th>
+        <th>Part Type</th>
+        <th>Stock </th>
+      </tr>
+    <tbody>
+        {{#each data}}
+      <tr>
+          <td>{{this.logs_id}}</td>
+          <td>{{this.unit_id}}</td>
+          <td>{{this.stroke_range}}</td>
+
+      </tr>
+          {{/each}}
+    </tbody>
+    </thead>
+  </table>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/stock.js"></script>
+

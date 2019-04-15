@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CMS - Express</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title"> -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="maintenance_logs.html">Maintenance Logs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pumpMaint.html">Pump Maintenance</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="stock.html">Fleet Inventory</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="public/maintenance_logs.html">Maintenance Logs</a>
+            <a class="dropdown-item" href="public/stock.html">Fleet Inventory</a>
+            <a class="dropdown-item" href="pumpMaint.html">Pump Maintenance</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="card" id = 'fleetInventoryCard' style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Fleet 1</h5>
+      <table class= 'fleetinventory'>
+        <thead>
+            <tr>
+              <th scope="col">Part</th>
+              <th scope="col">Remaining</th>
+              <th scope="col">Daily Average</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Valves</td>
+              <td>20</td>
+              <td>4.5</td>
+            </tr>
+            <tr>
+              <td>Seats</td>
+              <td>30</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Plunger</td>
+              <td>30</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table> 
+    </div>
+  </div>

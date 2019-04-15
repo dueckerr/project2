@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CMS - Express</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title"> -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="maintenance_logs.html">Maintenance Logs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pumpMaint.html">Pump Maintenance</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="stock.html">Fleet Inventory</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="public/maintenance_logs.html">Maintenance Logs</a>
+            <a class="dropdown-item" href="public/stock.html">Fleet Inventory</a>
+            <a class="dropdown-item" href="pumpMaint.html">Pump Maintenance</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Add units  -->
+<br>
+    <div class="col-sm-7">
+            <div class="well">
+                <h4>Add Pump</h4>
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+<br>
+
+<div class="row">
+    <!-- table for valves -->
+        <div class="col-sm-6">
+            <div class="well">
+                    <h3>Valves</h3>
+                    <table class= 'PumpMaintforParts' id='ValvesMaint-table'>
+                        <thead>
+                            <tr>
+                                <th scope="col">Pump Number</th>
+                                <th scope="col">Valves T/B</th>
+                                <th scope="col">Earliest</th>
+                                <th scope="col">Ideal</th>
+                                <th scope="col">Immediately</th>
+                            </tr>   
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <th rowspan="2" scope="rowgroup">112313</th>
+                                    <th scope="row">Soft</th>
+                                    <td>100,000,000</td>
+                                    <td>200,000,000</td>
+                                    <td>300,000,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hard</th>
+                                    <td>100,000,000</td>
+                                    <td>200,000,000</td>
+                                    <td>300,000,000</td>
+                                </tr>
+                        </tbody>                     
+                    </table>
+            </div>
+        </div>
+
+<!-- table for seats -->
+        <div class="col-sm-6">
+            <div class="well">
+                    <h3>Seats</h3>        
+                        <table class= 'PumpMaintforParts' id='SeatsMaint-table'>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pump Number</th>
+                                    <th scope="col">Seats T/B</th>
+                                    <th scope="col">Earliest</th>
+                                    <th scope="col">Ideal</th>
+                                    <th scope="col">Immediately</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <th rowspan="2" scope="rowgroup">112313</th>
+                                        <th scope="row">Soft</th>
+                                        <td>100,000,000</td>
+                                        <td>200,000,000</td>
+                                        <td>300,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Hard</th>
+                                        <td>100,000,000</td>
+                                        <td>200,000,000</td>
+                                        <td>300,000,000</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+            </div>
+        </div>
+<br>
+<!-- table for packing -->
+        <div class="col-sm-6">
+            <div class="well">
+                    <h3>Packing</h3>        
+                        <table class= 'PumpMaintforParts' id='PackingMaint-table'>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pump Number</th>
+                                    <th scope="col">Packing S/H</th>
+                                    <th scope="col">Earliest</th>
+                                    <th scope="col">Ideal</th>
+                                    <th scope="col">Immediately</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <th rowspan="2" scope="rowgroup">112313</th>
+                                        <th scope="row">Soft</th>
+                                        <td>100,000,000</td>
+                                        <td>200,000,000</td>
+                                        <td>300,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Hard</th>
+                                        <td>100,000,000</td>
+                                        <td>200,000,000</td>
+                                        <td>300,000,000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th rowspan="2" scope="rowgroup">112309</th>
+                                        <th scope="row">Soft</th>
+                                        <td>100,000,000</td>
+                                        <td>200,000,000</td>
+                                        <td>300,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Hard</th>
+                                        <td>100,000,000</td>
+                                        <td>200,000,000</td>
+                                        <td>300,000,000</td>
+                                    </tr>
+
+                            </tbody>
+                        </table>
+            </div>
+        </div>
+<br>
+<!-- table for plungers -->
+        <div class="col-sm-6">
+            <div class="well">
+                    <h3>Plungers</h3> 
+                    <table class= 'PumpMaintforParts' id='PlungersMaint-table'>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pump Number</th>
+                                    <th scope="col">Earliest</th>
+                                    <th scope="col">Ideal</th>
+                                    <th scope="col">Immediately</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>112313</td>
+                                        <td>100,000,000</td>
+                                        <td>200,000,000</td>
+                                        <td>300,000,000</td>
+                                    </tr>
+                                  </tbody>
+                        </table>
+
+            </div>
+        </div>
+</div>
+</div>
+        <div class="col-sm-2 sidenav">
+                <div class="well">
+                        <h3>Saved Pumps</h3> 
+                        <table id='PlungersMaint-table'>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Pump Number</th>
+
+                                    </tr> 
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>112313</td>
+                                    <td><button type="button" class="btn btn-danger">X</button></td>
+                                    </tr>
+                                    <tr>
+                                    <td>112309</td>  
+                                    <td><button type="button" class="btn btn-danger">X</button></td>
+                                    </tr>
+                                    </tbody>
+                            </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+
+<script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
