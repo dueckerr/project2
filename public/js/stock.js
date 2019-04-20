@@ -1,5 +1,3 @@
-var $parts = $("#parts");
-
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveparts: function(parts) {

@@ -76,6 +76,7 @@ var handleDeleteBtnClick = function() {
   });
 };
 
+// eslint-disable-next-line no-unused-vars
 var searchunits = function() {
   var unit_number = document.getElementById("link_id").value;
   // var idToDelete = this.getAttribute("data-num");
@@ -113,11 +114,3 @@ var searchunits = function() {
 };
 
 $maintenance_logs.on("click", ".delete", handleDeleteBtnClick);
-
-app.all(function(req, res, next) {
-  // set default or minimum is 10 (as it was prior to v0.2.0)
-  if (req.query.limit <= 10) {
-    req.query.limit = 10;
-  }
-  next();
-});

@@ -10,7 +10,7 @@ module.exports = function(app) {
 
   app.get("/api/maintenance_logs/unit_id:unit_id", function(req, res) {
     db.maintenance_logs
-      .findAll({ where: { unit_id: req.params.unit_id }})
+      .findAll({ where: { unit_id: req.params.unit_id } })
       .then(function(dbmaintenance) {
         res.json(dbmaintenance);
       });
