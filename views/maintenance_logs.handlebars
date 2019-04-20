@@ -26,7 +26,8 @@
         <th>Consumed</th>
         <th><button class="btn btn-danger float-right delete">ｘ</button></th>
       </tr>
-    <tbody>
+    </thead>
+    <tbody id= "maintenance_results">
         {{#each data}}
       <tr>
           <td>{{this.logs_id}}</td>
@@ -39,7 +40,6 @@
       </tr>
           {{/each}}
     </tbody>
-    </thead>
   </table>
   
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -1,15 +1,26 @@
+<div class="container">
+  <div class="row">
+  <h5 class="card-title"> Add Maintenance Logs</h5>
+
 <form class="create-form">
-
+<div class="container">
+  <div class="row">
   <div class="form-group">
-    <label for="ca">Unit Number</label>
+    <label for="unit_id">Unit Number</label>
     <input type="text" id="unit_id" name="name">
+    <label for="pump_strokes">Pump Strokes</label>
+    <input type="text" id="pump_strokes" name="name">
+    <label for="part">Part</label>
+    <input type="text" id="part" name="name">
+    <label for="parts_used">Parts Used Number</label>
+    <input type="number" id="parts_used">
   </div>
 
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
 
-  <button type="submit">Add Cat</button>
+
+<button type="submit" id= "submit_maint">Add Maintenance</button>
 </form>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/pm.js"></script>
+

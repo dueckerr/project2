@@ -1,47 +1,16 @@
-
 <div class="container">
-  <div class="row">
-  <h5 class="card-title">Maintenance Logs</h5>
-<hr>
-<form class="create-form">
 
-  <div class="form-group">
-    <label for="units" float = "right">Search for Unit:</label>
-        <input type='text' id='link_id'>
-        <input type='button' id="search_log" value='Search' onClick='searchunits()'>
->
-  </div>
-
-</form>
-
-
-  <div class="table-responsive table-hover">
-  <table class="table" id="maintenance_logs">
-    <thead>
-      <tr>
-        <th>Log ID</th>
-        <th>Unit Number</th>
-        <th>Stroke Range</th>
-        <th>Part</th>
-        <th>Consumed</th>
-        <th><button class="btn btn-danger float-right delete">ｘ</button></th>
-      </tr>
-    <tbody>
-        {{#each data}}
-      <tr>
-          <td>{{this.logs_id}}</td>
-          <td>{{this.unit_id}}</td>
-          <td>{{this.stroke_range}}</td>
-          <td>{{this.part}}</td>
-          <td>{{this.consumed}}</td>
-          <td><button class="btn btn-danger float-right delete">ｘ</button></td>
-
-      </tr>
-          {{/each}}
-    </tbody>
-    </thead>
-  </table>
+<div class="log-form">
+  <h2>Login to your account</h2>
+  <form>
+    <input type="text" title="username" placeholder="username" />
+    <input type="password" title="username" placeholder="password" />
+    <button type="submit" class="btn" href="maintenance_logs">Login</button>
+    <a class="forgot" href="maintenance_logs">Forgot Username?</a>
+  </form>
+</div>
+</div><!--end log form -->
   
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/maintenance_logs.js"></script>
+<script src="/js/login.js"></script>
 

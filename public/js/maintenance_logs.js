@@ -81,9 +81,9 @@ var searchunits = function() {
   // var idToDelete = this.getAttribute("data-num");
   console.log(unit_number);
   var id = parseInt(unit_number);
-  $("#maintenance_logs").empty();
   console.log(id);
   API.findmaintenance_logs(id).then(function(data) {
+    $("#maintenance_results").empty();
     console.log(data);
     var i;
     for (i = 0; i < data.length; i++) {
@@ -113,3 +113,11 @@ var searchunits = function() {
 };
 
 $maintenance_logs.on("click", ".delete", handleDeleteBtnClick);
+
+app.all(function(req, res, next) {
+  // set default or minimum is 10 (as it was prior to v0.2.0)
+  if (req.query.limit <= 10) {
+    req.query.limit = 10;
+  }
+  next();
+});
